@@ -1,0 +1,28 @@
+/* pages/buy/buy.wxss */
+.textclle{
+  width: 100%;
+  height: 300rpx;
+  text-indent: 20px;
+}
+.productdetails{
+  width: 100%;
+  height: 300rpx;
+}
+.productdetails .details{
+  width: 100%;
+  height: 80rpx;
+}
+.details .lefttext{
+  float: left;
+  margin-left:10px; 
+}
+.details .rightext{
+  float: right;
+  margin-right:10px; 
+}
+.wxpay{
+  width: 80%;
+  background-color: red;
+  margin: 20px auto;
+  color: white;
+}

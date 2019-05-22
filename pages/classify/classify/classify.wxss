@@ -1,0 +1,23 @@
+/* pages/classify/classify.wxss */
+.classify{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(250,250,250 );
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.treeselect{
+  width:30% ;
+  height:100%;
+}
+.card{
+  width:70%;
+  height: 100%; 
+}
+.classifycart{
+  position: fixed;
+  right:20px;
+  bottom:60px;  
+  z-index: 999;
+}

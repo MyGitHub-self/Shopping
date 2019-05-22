@@ -1,0 +1,21 @@
+<!-- 引入模板 -->
+<import src="../home-template/index-template.wxml"/>
+<import src="../home-template/template.wxml" />
+<template is="order"/>
+<!-- 轮播图组件 -->
+<swiper
+  indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}"
+  interval="{{interval}}"
+  duration="{{duration}}"
+>
+  <block wx:for="{{ swiper.temp }}" wx:for-item="item" wx:key="item"> 
+    <swiper-item>
+      <image src="{{ item.image }}" class="slide-image" mode="aspectFill" />
+    </swiper-item>
+  </block>
+</swiper>
+<!-- 模版的引用 -->
+<template is="content" data="{{ ...whitespirs }}"></template>
+<template is="content" data="{{ ...redspirs }}"></template>
+<template is="content" data="{{ ...jiweispirs }}"></template>

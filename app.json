@@ -1,0 +1,79 @@
+{
+  "pages": [
+    "pages/home/index/index",
+    "pages/home/buy/buy",
+    "pages/home/buyer/buyer",
+    "pages/home/search/search",
+    "pages/classify/classify/classify",
+    "pages/cart/cart/cart",
+    "pages/my/my/my",
+    "pages/my/orderform/orderform",
+    "pages/my/site/site"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "吾家酒坊",
+    "navigationBarBackgroundColor": "#292929",
+    "backgroundColor": "#F2f2f2",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#6e6d6b",
+    "selectedColor": "#f9f027",
+    "borderStyle": "white",
+    "backgroundColor": "#292929",
+    "list": [
+      {
+        "pagePath": "pages/home/index/index",
+        "iconPath": "images/footer-icon-01.png",
+        "selectedIconPath": "images/footer-icon-01-active.png",
+        "text": "吾家优选"
+      },
+      {
+        "pagePath": "pages/classify/classify/classify",
+        "iconPath": "images/footer-icon-02.png",
+        "selectedIconPath": "images/footer-icon-02-active.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/cart/cart/cart",
+        "iconPath": "images/footer-icon-03.png",
+        "selectedIconPath": "images/footer-icon-03-active.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/my/my/my",
+        "iconPath": "images/footer-icon-04.png",
+        "selectedIconPath": "images/footer-icon-04-active.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "usingComponents": {
+    "van-button": "..//node_modules1/vant-weapp/dist/button/index",
+    "van-datetime-picker": "..//node_modules1/vant-weapp/dist/datetime-picker/index",
+    "van-tree-select": "..//node_modules1/vant-weapp/dist/tree-select/index",
+    "van-card": "..//node_modules1/vant-weapp/dist/card/index",
+    "van-steps": "..//node_modules1/vant-weapp/dist/steps/index",
+    "van-goods-action": "..//node_modules1/vant-weapp/dist/goods-action/index",
+    "van-goods-action-icon": "..//node_modules1/vant-weapp/dist/goods-action-icon/index",
+    "van-goods-action-button": "..//node_modules1/vant-weapp/dist/goods-action-button/index",
+    "van-notice-bar": "..//node_modules1/vant-weapp/dist/notice-bar/index",
+    "van-search": "..//node_modules1/vant-weapp/dist/search/index",
+    "van-stepper": "..//node_modules1/vant-weapp/dist/stepper/index",
+    "van-tab": "..//node_modules1/vant-weapp/dist/tab/index",
+    "van-tabs": "..//node_modules1/vant-weapp/dist/tabs/index",
+    "van-collapse": "..//node_modules1/vant-weapp/dist/collapse/index",
+    "van-collapse-item": "..//node_modules1/vant-weapp/dist/collapse-item/index",
+    "van-cell": "..//node_modules1/vant-weapp/dist/cell/index",
+    "van-cell-group": "..//node_modules1/vant-weapp/dist/cell-group/index",
+    "van-submit-bar": "..//node_modules1/vant-weapp/dist/submit-bar/index"
+  },
+  "sitemapLocation": "sitemap.json"
+}

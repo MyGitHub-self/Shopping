@@ -1,0 +1,17 @@
+<!-- 引入模版 -->
+<import src="../classify-template/classify-template.wxml" />
+<import src="../classify-template/classify-nav.wxml" />
+<view class='classify'>
+
+  <view class="treeselect">
+  <!--引用Vant分类组件  --> 
+       <van-tree-select items="{{ classify }}" main-active-index="{{ mainActiveIndex }}" active-id="{{ activeId }}" bind:click-nav="onClickNav" bind:click-item="onClickItem"  />
+  </view>
+  <scroll-view class='card' scroll-y="true">
+    <template is="classify-card" data="{{ spirs}}"/>
+  </scroll-view>
+ <!--引用Vant购物车组件  -->
+       <view class='classifycart'>
+  <van-goods-action-icon icon="cart-o" text="购物车" info="{{ count }}" bindtap='hrefcart' />
+</view> 
+</view>

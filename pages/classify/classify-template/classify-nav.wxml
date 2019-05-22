@@ -1,0 +1,3 @@
+ <template name="classify-nav">
+   <!-- <van-tree-select items="{{ classify }}" main-active-index="{{ mainActiveIndex }}" active-id="{{ activeId }}" bind:click-nav="onClickNav" bind:click-item="onClickItem" /> -->
+ </template>

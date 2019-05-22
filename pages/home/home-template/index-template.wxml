@@ -1,0 +1,14 @@
+<template name="content">
+  <view class='content' >
+    <view class='title'>
+     {{ temp[0].name }}
+    </view>
+    <view class='maximages'>
+      <block wx:for="{{ temp }}"  wx:for-item="img" wx:key="img">
+        <view class='miximages' bindtap='buyer' data-id="{{ img }}">
+            <image src='{{ img.image }}' mode='aspectFit' />
+        </view>
+      </block>
+    </view>
+  </view>
+</template>

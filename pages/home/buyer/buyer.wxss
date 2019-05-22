@@ -1,0 +1,2 @@
+/* pages/buyer/buyer.wxss */
+@import "../home-template/buyer-content-template.wxss"; 

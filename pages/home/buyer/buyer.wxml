@@ -1,0 +1,6 @@
+<!-- 引入模版 -->
+<import src="../home-template/buyer-template.wxml" />
+<import src="../home-template/buyer-content-template.wxml" />
+<!-- 引用模版 -->
+<template  is="content" data="{{ spirs }}"/>
+<template  is="buyer" data="{{ countnum }}"/>

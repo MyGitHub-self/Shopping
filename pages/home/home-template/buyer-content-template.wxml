@@ -1,0 +1,18 @@
+<template name="content"> 
+<block wx:for="{{spirs}}" wx:for-item="buyer"  wx:key="buyer" >
+  <view class='buyercard'> 
+    <view class='images'>
+      <image src='{{ buyer.image}}' mode='aspectFill' />
+    </view>
+    <view class='content'>
+      <view class='title'>{{ buyer.title }}</view>
+      <view class='describe'>{{ buyer.price }}</view>
+      <view class='conunt'>{{ buyer.conunt }}</view>
+    </view>
+  </view>
+  <van-tabs bind:click="onClick">
+    <van-tab title="商品详情" icon="browsing-history-o">商品详情</van-tab>
+    <van-tab title="商品评价" >商品评价</van-tab>
+  </van-tabs>
+  </block>
+</template>

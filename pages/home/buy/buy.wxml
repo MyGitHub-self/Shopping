@@ -1,0 +1,33 @@
+<!-- 引入分类模版 -->
+<import src="../../classify/classify-template/classify-template.wxml" />
+ <!-- 调用分类模版 --> 
+  <template is="classify-card"  data="{{spirs}}"/> 
+<van-cell-group>
+  <van-cell title="配送方式" value="空运" />
+  <van-cell title="可配送地区" value="湖南,广东,湖北" />
+  <van-cell title="使用卡劵" value="暂无可用卡卷" />
+  <van-cell title="使用红包" value="无可用红包" />
+  <van-cell title="发票信息" value="内容" />
+  <view class="section">
+    <textarea placeholder="请输入备注" auto-focus  maxlength="60" class='textclle'/>
+  </view>
+  <view class="productdetails">
+    <view class='details'>
+      <text class='lefttext'>订单金额</text>
+      <text class='rightext'>{{ num }}</text>
+    </view>
+    <view class='details'>
+      <text class='lefttext'>优惠金额</text>
+      <text class='rightext'>0</text>
+    </view>
+    <view class='details'>
+      <text class='lefttext'>使用红包</text>
+      <text class='rightext'>0</text>
+    </view>
+    <view class='details'>
+      <text class='lefttext'>运费</text>
+      <text class='rightext'>0</text>
+      </view>
+    </view>
+    <button class='wxpay'  bindtap='gobuy'>微信支付</button>
+</van-cell-group>

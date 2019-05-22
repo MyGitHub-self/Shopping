@@ -1,0 +1,9 @@
+<template name="classify-card">
+<block  wx:for="{{ spirs }}" wx:for-item="card" wx:key="gwcart">  
+ <van-card num="{{ card.conunt }}" tag="标签" price="{{ card.price }}" desc="描述信息" title="{{card.title}}" thumb="{{ card.image }}">
+      <view slot="footer">
+        <van-stepper value="{{ card.conunt }}" min="{{0}}" max="40" step="1" bind:change="stepper" data-id="{{ card.id }}" bind:plus="plus" bind:minus="minus"/>
+    </view>
+    </van-card>
+  </block>
+</template>

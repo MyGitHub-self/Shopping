@@ -1,0 +1,10 @@
+<!-- 引入模版 -->
+<import src="../cart-template/cart-template.wxml" />
+<view class='cartnull'  wx:if="{{ cardshow }}">
+ <image src='../../../images/cart-null.png'/> 
+ <view  class='cartnull-title'>购物车空空如也,您可以</view>
+ <button bindtap='herfindex' class='btn'>随便逛逛</button>
+</view>
+<!-- 模版的引用 -->
+<template is="cart" data="{{ classcard,pricenum}}" wx:if="{{ !cardshow }}"/>
+

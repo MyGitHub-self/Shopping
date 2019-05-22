@@ -1,0 +1,14 @@
+<view>
+<van-steps
+  steps="{{ steps }}"
+  active="{{ active }}"
+/>
+</view>
+<view>
+<van-steps
+  steps="{{ steps }}"
+  active="{{ active }}"
+  direction="vertical"
+  active-color="#f44"
+/>
+</view>

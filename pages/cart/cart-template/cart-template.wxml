@@ -1,0 +1,13 @@
+<template name="cart">
+  <!-- 商品卡片 -->
+  <block wx:for="{{ classcard }}" wx:for-item="gwcart"  wx:key="gwcart">
+    <van-card num="{{ gwcart.conunt }}" tag="标签" price="{{ gwcart.price }}" desc="描述信息" title="{{ gwcart.title}}" thumb="{{ gwcart.image }}">
+      <view slot="footer">
+        <van-button size="mini" type="danger" plain="true"  data-id="{{ gwcart.id }}" bindtap='remove'>删除</van-button>
+        <van-button size="mini" type="primary" plain="true">查看评价</van-button>
+      </view>
+    </van-card>
+   <van-cell title="小计" value="{{ gwcart.price*gwcart.conunt }}"  border="false" />
+    <van-submit-bar price="{{ pricenum*100 }}" button-text="提交订单" bind:submit="onSubmit" />
+     </block>
+</template>

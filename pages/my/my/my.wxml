@@ -1,0 +1,20 @@
+<view class='title'>
+  <view class='title-content'>
+  <open-data type="userAvatarUrl" class="userAvatarUrl"></open-data>    
+  <open-data type="userNickName" class="userNickName"></open-data>
+        </view>
+    </view>
+<block wx:for="{{ mylist }}" wx:for-item="list" wx:key="list">
+<van-cell
+  value=""
+  icon="{{ list.icon }}"
+  is-link
+  bindtap="onChange"
+  data-id="{{ list.id }}"
+>
+  <view slot="title">
+    <view class="van-cell-text">{{ list.text }}</view>
+  </view>
+</van-cell>
+</block>
+

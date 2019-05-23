@@ -1,3 +1,9 @@
+基于微信小程序框架+Vantui+Json-server开发的一个售卖酒类的小商城（部分功能未完善json-server未启动部分页面为空白页属于正常）
+---------------------------------------------------------------------------                           
+
+
+
+
 
           ├─application                       ---------静态数据存储区
           │      serve.js                     ---------静态数据文件
@@ -49,3 +55,27 @@
           │  package-lock.json                ---------版本号管理文件
           │  project.config.json              ---------项目配置文件 
           │  sitemap.json                     ---------全局索引文件  
+主页  
+------
+![](https://raw.githubusercontent.com/MyGitHub-self/Mydemo/master/shopping/1.png)  
+详情页    
+------
+![](https://raw.githubusercontent.com/MyGitHub-self/Mydemo/master/shopping/2.png)          
+支付页    
+------
+![](https://raw.githubusercontent.com/MyGitHub-self/Mydemo/master/shopping/3.png)  
+分类页    
+------
+![](https://raw.githubusercontent.com/MyGitHub-self/Mydemo/master/shopping/4.png)  
+购物车页    
+------
+![](https://raw.githubusercontent.com/MyGitHub-self/Mydemo/master/shopping/5.png)  
+默认购物车页    
+------
+![](https://raw.githubusercontent.com/MyGitHub-self/Mydemo/master/shopping/6.png)  
+支付页（购物车跳转）    
+------
+![](https://raw.githubusercontent.com/MyGitHub-self/Mydemo/master/shopping/7.png)  
+我的页   
+------
+![](https://raw.githubusercontent.com/MyGitHub-self/Mydemo/master/shopping/8.png)  
